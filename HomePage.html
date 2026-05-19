@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <!-- homepage.html: Displays number blocks that link to continents, showing countries and cities -->
+<head>
+    <title>Home Page</title>
+
+    <style>
+        /* CSS for homepage */
+
+    h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+        /* 1. Number Block Styling */
+
+.number-blocks {
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+}
+
+.block {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* Different background colors for each block */
+.block:nth-child(1) { background-color: #ff6b6b; }   /* Red-ish */
+.block:nth-child(2) { background-color: #4ecdc4; }   /* Teal */
+.block:nth-child(3) { background-color: #1a73e8; }   /* Blue */
+.block:nth-child(4) { background-color: #f7b731; }   /* Yellow */
+
+/* Hover effect */
+.block:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+
+/* 2. Continent Section Styling */
+
+section {
+    margin-top: 40px;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #2c3e50; /* Dark blue */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+/* 3. Countries (Ordered List) */
+
+ol {
+    color: #34495e; /* Steel Blue */
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+
+/* 4. Cities (Unordered List) */
+
+ul {
+    color: #7f8c8d; /* Gray */
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 17px;
+}
+
+ul li {
+    margin-bottom: 4px;
+}
+
+    </style>
+</head>
+<body>
+<!-- Number blocks: clickable blocks 1-4 linking to continent sections below -->
+
+     <h1>Travel Blog </h1>
+     <div class="number-blocks">
+    <a href="#europe" class="block">1</a>
+    <a href="#asia" class="block">2</a>
+    <a href="#america" class="block">3</a>
+    <a href="#africa" class="block">4</a>
+     </div>
+
+    <section id="europe">
+    <h2>Europe</h2>
+    <ol>
+        <li>France
+            <ul>
+                <li>Paris</li>
+                <li>Nice</li>
+                <li>Marseille</li>
+            </ul>
+        </li>
+
+        <li>Italy
+            <ul>
+                <li>Rome</li>
+                <li>Florence</li>
+                <li>Venice</li>
+            </ul>
+        </li>
+        
+        <li>Greece
+            <ul>
+                <li>Athens</li>
+                <li>Thessaloniki</li>
+                <li>Santorini</li>
+            </ul>
+        </li>
+    </ol>
+</section>
+
+<section id="asia">
+    <h2>Asia</h2>
+    <ol>
+        <li>Japan
+            <ul>
+                <li>Tokyo</li>
+                <li>Kyoto</li>
+                <li>Osaka</li>
+            </ul>
+        </li>
+
+        <li>China
+            <ul>
+                <li>Beijing</li>
+                <li>Shanghai</li>
+                <li>Xi'an</li>
+            </ul>
+        </li>
+        
+        <li>India
+            <ul>
+                <li>New Delhi</li>
+                <li>Mumbai</li>
+                <li>Jaipur</li>
+            </ul>
+        </li>
+    </ol>
+</section>
+
+<section id="america">
+    <h2>America</h2>
+    <ol>
+        <li>USA
+            <ul>
+                <li>New York City</li>
+                <li>Los Angeles</li>
+                <li>Chicago</li>
+            </ul>
+        </li>
+
+        <li>Brazil
+            <ul>
+                <li>Rio de Janeiro</li>
+                <li>São Paulo</li>
+                <li>Salvador</li>
+            </ul>
+        </li>
+        
+        <li>Canada
+            <ul>
+                <li>Toronto</li>
+                <li>Vancouver</li>
+                <li>Montreal</li>
+            </ul>
+        </li>
+    </ol>
+</section>
+
+<section id="africa">
+    <h2>Africa</h2>
+    <ol>
+        <li>South Africa
+            <ul>
+                <li>Cape Town</li>
+                <li>Johannesburg</li>
+                <li>Durban</li>
+            </ul>
+        </li>
+
+        <li>Egypt
+            <ul>
+                <li>Cairo</li>
+                <li>Luxor</li>
+                <li>Sharm El Sheikh</li>
+            </ul>
+        </li>
+        
+        <li>Morocco
+            <ul>
+                <li>Marrakech</li>
+                <li>Casablanca</li>
+                <li>Fez</li>
+            </ul>
+        </li>
+    </ol>
+</section>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <!-- TravelStories.html: Table lists destinations, images jump to detailed info sections -->
+<head>
+    <title>Travel Stories</title>
+
+    <style>
+        /*CSS for travel stories */
+        /* CSS styling for table, images, and info sections to make the page visually appealing and functional */
+        /* Smooth scrolling when clicking images */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Basic page styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fafafa;
+}
+
+/* TABLE STYLING */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* soft shadow */
+}
+
+/* Caption styling */
+caption {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: left;
+  color: #333;
+}
+
+/* Table headers */
+th {
+  background-color: #4da8da; /* bright blue */
+  color: white;
+  padding: 12px;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+/* Table cells */
+td {
+  padding: 12px;
+  border: 2px solid #d0d0d0;
+  vertical-align: middle;
+}
+
+/* Alternating row colors */
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e9f5ff; /* very light blue */
+}
+
+/* -------- IMAGE STYLING -------- */
+.thumb {
+  width: 150px;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  border: 2px solid #b9dfff;
+}
+
+/* Hover effect — REQUIRED by assignment */
+.thumb:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
+/* -------- INFO SECTIONS AT BOTTOM -------- */
+.info-section {
+  margin-top: 40px;
+  padding: 18px;
+  background-color: #ffffff;
+  border-left: 5px solid #4da8da; /* colored highlight */
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+.info-section h3 {
+  margin-top: 0;
+  color: #2b6c8e;
+  font-size: 1.2rem;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Travel Destinations</h1>
+
+  <!-- Table: left column destination name, right column clickable image -->
+  <table>
+    <caption>Click an image to jump to details below</caption>
+    <thead>
+      <tr>
+        <th>Destination</th>
+        <th>Attraction</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Paris</td>
+        <!-- wrap the image with an anchor that links to the info section id -->
+        <td><a href="#paris-info"><img src="images/eiffel.jpg" alt="Eiffel Tower" class="thumb"></a></td>
+      </tr>
+
+      <tr>
+        <td>Rome</td>
+        <td><a href="#rome-info"><img src="images/colosseum.jpg" alt="Colosseum" class="thumb"></a></td>
+      </tr>
+
+      <tr>
+        <td>New York</td>
+        <td><a href="#ny-info"><img src="images/Statue_of_Liberty.jpg" alt="Statue of Liberty" class="thumb"></a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Bottom: info sections that are targets for the anchors above -->
+  <section id="paris-info" class="info-section">
+    <h3>Paris — Eiffel Tower</h3>
+    <p>
+        The Eiffel Tower is an iconic iron structure located in Paris, France. Built in 1889, it stands 324 meters tall and attracts millions of visitors every year. It offers breathtaking views of the city and is a symbol of French culture and engineering. The tower is especially beautiful when illuminated at night.
+    </p>
+  </section>
+
+  <section id="rome-info" class="info-section">
+    <h3>Rome — Colosseum</h3>
+    <p>
+        The Colosseum is an ancient amphitheater in Rome, Italy, and one of the greatest works of Roman architecture. Completed around 80 AD, it hosted gladiatorial contests and public spectacles. Visitors can explore its massive interior and imagine the history of Roman entertainment. It is a UNESCO World Heritage site and a symbol of ancient Rome.
+    </p>
+  </section>
+
+  <section id="ny-info" class="info-section">
+    <h3>New York — Statue of Liberty</h3>
+    <p>
+        The Statue of Liberty, located on Liberty Island in New York Harbor, is a symbol of freedom and democracy. Gifted by France in 1886, it stands 93 meters tall including its pedestal. Visitors can take a ferry to the island and climb to the crown for panoramic views. The statue welcomes millions of immigrants and tourists each year.
+    </p>
+  </section>
+
+</body>
+</html>
