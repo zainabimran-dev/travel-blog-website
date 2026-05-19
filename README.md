@@ -13,7 +13,7 @@ A simple multi-page travel blog website created using HTML.
 
 ## Technologies Used
 - HTML
-- CSS (if used)
+- CSS
 - Images folder for assets
 
 ## Author
